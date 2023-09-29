@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*, *::before,
+ *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-mobile{
+    position: relative;
+    width: 100%;
+}
+
+.bg-desktop{
+    display: none;
+}
+
+.bg-card-back img{
+    position: absolute;
+    width: 70%;
+    top: 40px;
+    left: 80px;
+}
+
+.bg-card-back span{
+    position: absolute;
+    top: 6.6rem;
+    right: 4.1rem;
+    font-size: 0.6rem;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.1rem;
+}
+
+.bg-card-front img{
+    position: absolute;
+    width: 70%;
+    top: 121px;
+    left: 24px;
+}
+
+.circle{
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    background:  white;
+    border-radius: 50%;
+}
+
+.transparent-circle{
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 147px;
+    position: absolute;
+    left: 83px;
+}
+
+.bg-card-front .cardNum{
+    position: absolute;
+    color: white;
+    top: 205px;
+    font-size: 1rem;
+    left: 37px;
+    letter-spacing: 0.2rem;
+}
+
+.bg-card-front h1{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.550rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    left: 36px;
+    top: 240px;
+}
+.bg-card-front p{
+    position: absolute;
+    color: white;
+    font-size: 0.550rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    left: 243px;
+    top: 240px;
+}
+
+.container{
+    padding: 4rem 1.7rem 0 1.7rem;
+}
+
+label{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+input{
+    width: 100%;
+    padding: 0.7rem 0 0.6rem 0.9rem;
+    margin: 0.6rem 0 1.2rem;
+    border:  1.5px solid hsl(270, 3%, 87%);
+    border-radius: 10px;
+}
+
+::placeholder{
+    color:  hsl(279, 6%, 55%);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+}
+
+.details{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.exp-date{
+    width: 50%;
+}
+
+.inp{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+}
+
+.cvc{
+    width: 50%;
+}
+ 
+button{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    background: hsl(278, 68%, 11%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container-2{
+    padding: 4rem 1.7rem 0 1.7rem;
+    width: 100%;
+    display: none;
+}
+
+.done-circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(100,72,254,1) 0%, rgba(96,5,148,1) 90%);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+i{
+    position: absolute;
+    top: 1.8rem;
+    left: 1.8rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.container-2 h2{
+    color: hsl(278, 68%, 11%);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+.container-2 p{
+    color: hsl(279, 6%, 55%);
+    font-size: 0.9rem;
+    padding-bottom:3rem ;
+    text-align: center;
+}
+
+.errorStates{
+    color: hsl(0, 100%, 66%);
+    font-size: 0.550rem;
+    margin-top: -0.8rem;
+    margin-bottom: 0.8rem;
+    display: none;
+}
+
+.mon, .yr{
+    display: block;
+}
+
+.date{
+    display: flex;
+}
+
+
+@media (min-width: 1440px){
+  /* body {
+  } */
+
+  .bg-mobile{
+    display: none;
+  }
+
+  .bg-desktop{
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  .bg-card-front img{
+    width: 30%;
+    top: 120px;
+    left: 160px;
+}
+
+.circle {
+    top: 150px;
+    left: 193px;
+    width: 40px;
+    height: 40px;
+}
+
+.transparent-circle {
+    width: 20px;
+    height: 20px;
+    top: 160px;
+    left: 250px;
+}
+
+.bg-card-front .cardNum {
+    top: 260px;
+    font-size: 1.7rem;
+    left: 195px;
+}
+
+.bg-card-front h1 {
+    font-size: 0.8rem;
+    left: 193px;
+    top: 315px;
+}
+
+.bg-card-front p {
+    font-size: 0.8rem;
+    left: 520px;
+    top: 315px;
+}
+
+.bg-card-back img {
+    width: 30%;
+    top: 400px;
+    left: 250px;
+}
+
+.bg-card-back span{
+    top: 31.8rem;
+    left: 37.5rem;
+    font-size: 0.7rem
+}
+
+.container{
+    padding-left: 50rem;
+    padding-top: 13.5rem;
+    width: 80%;
+}
+
+.container-2{
+    display: none;
+    width: 60%;
+    padding-left: 33rem;
+    padding-top: 13.5rem;
+
+}
+}
+
